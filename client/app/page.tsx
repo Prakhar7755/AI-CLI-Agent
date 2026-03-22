@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Spinner } from '@/components/ui/spinner'
 import { authClient } from '@/lib/auth-client'
@@ -30,7 +31,7 @@ const Home = () => {
             {/* Avatar */}
             <div className="flex justify-center mb-6">
               <div className="relative">
-                <img
+                <Image
                   src={data?.user?.image || '/vercel.svg'}
                   alt={data?.user?.name || 'User'}
                   width={120}

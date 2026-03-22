@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "start:cli": "cd server && node src/cli/main.js"
   },
   "keywords": [],
   "author": "",

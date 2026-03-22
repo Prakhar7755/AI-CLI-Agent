@@ -2,6 +2,8 @@ import { google } from '@ai-sdk/google'
 import { streamText, generateText } from 'ai'
 import { config } from '../../config/google.config.js'
 import chalk from 'chalk'
+import dotenv from 'dotenv'
+dotenv.config()
 
 export class AIService {
   constructor() {
