@@ -25,7 +25,10 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req, res) => {
-  res.send('Hello from the server!')
+  res.send(`
+    <h1>Hello from the server!</h1>
+    <a href="https://ai-cli-agent.vercel.app">Go to Client</a>
+  `)
 })
 
 // This endpoint now properly handles Bearer token authentication
