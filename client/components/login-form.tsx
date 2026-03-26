@@ -27,6 +27,7 @@ export const LoginForm = () => {
             src={'/login.svg'}
             alt="Login"
             width={180}
+            height={180}
             className="relative z-10 transform transition hover:scale-[1.03] duration-500 drop-shadow-2xl"
           />
         </div>
